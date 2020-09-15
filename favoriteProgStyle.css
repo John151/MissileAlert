@@ -1,0 +1,15 @@
+/*I saw someone else's website in class, with the cat
+ears! I really wanted to try that*/
+.jumbotron {
+    background-image: url("bernd-dittrich-NZZ8LrS_nh8-unsplash.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}

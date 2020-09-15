@@ -4,23 +4,59 @@
     <meta charset="UTF-8">
     <title>Favorite Program</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="favoriteProgStyle.css" type="text/css">
 </head>
 <body>
 <div class="jumbotron">
-    <h1>Favorite Program</h1>
+    <h1 class="display-4">Favorite Program</h1>
 </div>
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 mx-3">
         <p>
-            Here's some text
+            This is my favorite program because working on it I felt like I could actually
+            program for the first time. I'm actually not %100 sure it was this program, but it was around
+            this time. Everything went from being very confusing to just difficult and time consuming, but
+            possible!
+            <br>
+            This program asks the user for a five digit number, splits the characters, adds them up. I would
+            probably do it differently now, but I'm happy with it. There's an unnecessary print statement in a function,
+            I think it was to test it and should have been removed.
         </p>
     </div> <!-- end of first column -->
 
-    <div class="col-sm-8">
+    <div class="col-md-7 ml-3">
+
         <pre>
             <code>
+def main():
+    try:
+        fivedigit = userinput()
+        summedup = maths(fivedigit)
+        printing(summedup)
+    except:
+        print('err')
 
+
+def userinput():
+    fivedigit = int(input("Please type in a 5 digit number."))
+    while fivedigit > 99999 or fivedigit < 10000:
+        fivedigit = int(input("Please type in a 5 digit intiger!"))
+    return fivedigit
+
+def maths(fivedigit):
+    fivedigit = str(fivedigit)
+    seperatednumbers = fivedigit.split
+    summedup = 0
+    for number in range(len(fivedigit)):
+
+        summedup += int(fivedigit[number])
+
+    print(summedup)
+    return summedup
+def printing(summedup):
+    print(f'The sum of the digits is {summedup}')
+
+main()
             </code>
         </pre>
 
