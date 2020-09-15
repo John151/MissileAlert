@@ -1,0 +1,6 @@
+div {
+    width: border-box;
+    border: 1px outset lightblue;
+    padding: 6px;
+    text-align: left;
+}

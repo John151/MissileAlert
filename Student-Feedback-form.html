@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body class="m-2">
+<div class="jumbotron">
+    <h1>Please provide feedback! You may do so anonymously.</h1>
+</div>
+<form class="mx-4">
+<div>
+    <label for="user-name">Name</label>
+    <input id="user-name" class="form-control" type="text">
+
+    <label for="email">email</label>
+    <input id="email" class="form-control" type="email">
+
+    <label for="comments" >Comments</label>
+    <br>
+    <textarea id="comments" class="form-control" rows="10" cols="40">Default txt here</textarea>
+</div>
+
+    <label class="form-text">Current Student?</label>
+<div class="form-check">
+
+    <input id="affirmative" name="current-student" class="form-check-input" type="radio">
+    <label for="affirmative" class="form-check-label">Yes</label>
+</div>
+<div class="form-check">
+    <input id="negative" name="current-student" class="form-check-input" type="radio">
+    <label for="negative" class="form-check-label">No</label>
+</div>
+<div>
+    <button type="button" class="btn btn-outline-primary mt-3"
+    >Submit</button>
+</div>
+</form>
+</body>
+</html>
