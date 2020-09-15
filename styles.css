@@ -1,6 +1,12 @@
-div {
-    width: border-box;
-    border: 1px outset lightblue;
-    padding: 6px;
-    text-align: left;
+
+
+
+body {
+    background-color: #b9d4c3;
+    font-family: 'Oswald', sans-serif;
+}
+.jumbotron {
+    background-color: #4f9898;
+    color: #f5dbac;
+    font-family: 'Merriweather', serif;
 }

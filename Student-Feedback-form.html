@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <title>Student Feedback Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<!--    <link rel="stylesheet" href="styles.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body class="m-2">
 <div class="jumbotron">
     <h1>Please provide feedback! You may do so anonymously.</h1>
 </div>
 <form class="mx-4">
-<div>
+<div class="row">
+<div class="col-md-5">
+    We value your feedback!
+    <br>
+    <br>
+    We aim to improve at every opportunity. Your email address is for our use only,
+    it will never be shared with a third party unless we change our policy which we may
+    do at any time.
+    Please take a moment to thoughtfully compose a few comments.
+</div> <!-- end of first column -->
+<div class="col-md-7">
     <label for="user-name">Name</label>
     <input id="user-name" class="form-control" type="text">
 
@@ -21,7 +32,7 @@
     <label for="comments" >Comments</label>
     <br>
     <textarea id="comments" class="form-control" rows="10" cols="40">Default txt here</textarea>
-</div>
+
 
     <label class="form-text">Current Student?</label>
 <div class="form-check">
@@ -36,7 +47,9 @@
 <div>
     <button type="button" class="btn btn-outline-primary mt-3"
     >Submit</button>
-</div>
+</div> <!-- end of second column -->
+
+</div> <!-- end of row -->
 </form>
 </body>
 </html>
