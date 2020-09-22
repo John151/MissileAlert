@@ -1,0 +1,30 @@
+
+body {
+    margin: 6px;
+    background-color: #cdd0b2;
+    font-family: 'Epilogue', sans-serif;
+
+}
+.form-check-input {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+
+.form-check {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+.form-check-label{
+    padding: 5px;
+    text-shadow: black;
+}
+
+#comments{
+    margin-top: 3px;
+}
+
+.jumbotron{
+    background-color: pink;
+}

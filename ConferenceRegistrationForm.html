@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="conference-form-style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@1,200&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="jumbotron">
+    <h1>
+        Please fill out out form and reserve your spot today!
+    </h1>
+</div>
+<form class="mx-3">
+    <div class="row">
+        <div class="col-md-6">
+    <label for="register-name">Name</label>
+    <input id="register-name" name="register-name" class="form-control" type="text"
+    maxlength="70" required>
+
+    <br><label for="register-password">Password</label>
+    <input id="register-password" class="form-control" type="password"
+           name="register-password" required>
+
+    <br><label for="register-email">email address</label>
+    <input id="register-email" class="form-control" type="email"
+           name="register-email" required>
+        </div><!--ends first collumn-->
+        <div class="col-md-6">
+    <br><label for="t-shirt-size">T-Shirt Size</label>
+    <select id="t-shirt-size" class="form-control" name="t-shirt-size">
+        <option value="small">Small</option>
+        <option value=medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <br><label for="birthday">Date of Birth</label>
+    <input id="birthday" class="form-control" type="date" name="birthday" required>
+        </div>
+        </div> <!-- ends first row -->
+    <div class="row">
+<br>
+<br>
+
+<div class="col-sm-6">
+    <p>Would you like to receive email updates
+    from the conference sponsors?
+    </p>
+    <br>
+    <div class="form-check">
+    <label for="yes" class="form-check-label">Yes</label>
+    <input type="radio" id="yes" class="form-check-input" name="receive-email" value="yes" required/>
+</div>
+    <br>
+    <div class="form-check">
+    <label for="no" class="form-check-label">No</label>
+    <input type="radio" id="no" class="form-check-input" name="receive-email" value="no" required/>
+    </div>
+
+</div>
+<br>
+<br>
+        <div class="col-sm-6">
+    <p>
+            Will you attend the AM or PM session?
+    </p>
+            <div class="form-check">
+                <label for="am" class="form-check-label">AM</label>
+
+                <input type="checkbox" class="form-check-input" name="am" id="am" value="am"/>
+<br>
+                <label for="pm" class="form-check-label">PM</label>
+
+                <input type="checkbox" class="form-check-input" name="pm" id="pm" value="pm"/>
+
+            </div>
+
+        </div>
+
+    </div>  <!--Ends second row-->
+    <br>
+    <br>
+        <label for="comments" >Comments</label>
+
+    <textarea id="comments" class="form-control" rows="7" cols="70">Default txt here</textarea>
+    <br><input type="submit" />
+
+</form>
+</body>
+</html>
